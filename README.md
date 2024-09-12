@@ -6,7 +6,7 @@ Our Quizlet Clone project uses ReactJS for the frontend, Java Spring Boot and My
 
 
 ## Technologies Used
-- Backend: Java Spring Boot, MySQL ([GitHub repository](https://github.com/deltaDC/Quizlet-Clone-Java-Spring-Boot))
+- Backend: Java Spring Boot, MySQL 
 - Frontend: ReactJS
 - Containerization: Docker
 
