@@ -1,0 +1,40 @@
+.search-results-page {
+    color: white;
+
+    .search-results-page-header {
+        font-size: 3rem;
+    }
+
+    .search-results-page-container {
+        width: 1170px;
+        max-width: calc(100vw - 48px);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        padding-left: 10%;
+    }
+
+    .search-results-page-content {
+        margin-top: 20px;
+        margin-right: 10%;
+    }
+
+    .set-items {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .pagination {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
+        color: white;
+    }
+}

@@ -1,0 +1,207 @@
+.learn-page {
+  display: flex;
+  flex-direction: column;
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem;
+  }
+
+  .close-button {
+    padding: 8px 10px 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: inherit;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .close-button:hover {
+    background-color: lighten(#262645, 20%);
+  }
+
+  .learn-form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 60%;
+    height: 70vh;
+    border: 1px solid #2e3856;
+    background-color: #2e3856;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    line-break: auto;
+    transition: transform 0.5s ease;
+  }
+
+  .learn-form p {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .defi-box {
+    height: 30%;
+    text-align: left;
+    margin: 0 0 1rem 1.75rem;
+  }
+
+  .defi-box p {
+    margin-bottom: 0.25rem;
+    color: #93a3cf;
+  }
+
+  .defi-box span {
+    margin: 1rem 0;
+    color: white;
+  }
+
+  .defi-box .hint-button {
+    display: block;
+    margin: 1rem 0;
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2e3857;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: lighten($color: #2e3856, $amount: 10%);
+    }
+  }
+
+  .input-box {
+    height: 60%;
+    margin: 0 0 0.5rem 1.75rem;
+    text-align: left;
+
+    p {
+      font-size: 1rem;
+      color: #93a3cf;
+    }
+
+    .incorrect-message p {
+      color: red;
+    }
+
+    .correct-message p {
+      color: lightgreen;
+    }
+  }
+
+  .input-box input {
+    width: 94.5%;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .control-button {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+
+    .btn1 {
+      color: lightskyblue;
+      background-color: inherit !important;
+    }
+
+    .btn1:hover {
+      border: 1px solid #ccc;
+    }
+  }
+
+  .control-button button {
+    margin: 0rem 1rem 0 0;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #2e3856;
+    border-radius: 5px;
+    background-color: #4454fc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .control-button button:hover {
+    background-color: lighten(#4454fc, $amount: 10%);
+  }
+
+  .next-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2e3856;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .summary {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .answer-button.disabled {
+    background-color: #cccccc;
+    cursor: auto;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+
+  .summary button {
+    margin: 0rem 1rem 0 0;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #2e3856;
+    border-radius: 5px;
+    background-color: #4454fc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .learn-form {
+      width: 90%;
+    }
+
+    .input-box input {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .learn-form {
+      width: 90%;
+    }
+
+    .input-box input {
+      width: 85%;
+    }
+  }
+}

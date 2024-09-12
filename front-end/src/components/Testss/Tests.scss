@@ -1,0 +1,171 @@
+.Tests {
+    height: 100vh;
+    overflow-y: auto; //cuộn dọc
+    display: flex;
+    flex-direction: column; // Chuyển sang kiểu layout dọc
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 1rem;
+    }
+
+    .elapsed-time {
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
+        text-align: center;
+        flex: 1;
+    }
+
+    .close-button {
+        padding: 8px 10px 6px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: inherit;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .close-button:hover {
+        background-color: lighten(#262645, 20%);
+    }
+
+    .tests-form {
+        width: 60%;
+        min-height: 60vh;
+        border: 1px solid #2e3856;
+        background-color: #2e3856;
+        border-radius: 10px;
+        display: flex;
+        transition: transform 0.5s ease;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 20px;
+        box-shadow: 0 .5rem .75rem rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease;
+    }
+
+    .defi-box {
+        position: relative;
+        height: 40%;
+
+        p {
+            font-size: 1.25rem;
+            color: #fff;
+            margin: 1.5rem 0 1.5rem 1.5rem;
+        }
+    }
+
+    .term-box {
+        height: 60%;
+        justify-items: center;
+
+        p {
+            font-size: 1.25rem;
+            color: #fff;
+            margin: 1.5rem 0 0 1.5rem;
+        }
+    }
+
+    .term-box .buttons-answer {
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: column;
+
+        .button-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .button-row button {
+            width: 70%;
+        }
+    }
+
+    .tests-form .buttons-answer button {
+        margin: .5rem auto;
+        padding: 1.5rem 0;
+        font-size: 1.25rem;
+        border: 2px solid #5b6383;
+        border-radius: 10px;
+        background-color: #2e3856;
+        color: white;
+        cursor: pointer;
+
+        &.clicked {
+            background-color: #87CEFA;
+        }
+
+        &.correct {
+            background-color: lightgreen;
+        }
+
+        &.incorrect {
+            background-color: lightcoral;
+        }
+    }
+
+    .tests-form .buttons-answer button:hover {
+        border: 2px solid #4454fc;
+    }
+
+    .tests-form .buttons-answer div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .submit-button {
+        background-color: #4255ff;
+        align-self: center;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+
+        &:hover {
+            background-color: #423ed8;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .tests-form {
+            width: 90%;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+    }
+
+    @media only screen and (max-width: 500px) {
+        .term-box .buttons-answer {
+            .button-row {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .button-row button {
+                width: 90%;
+            }
+        }
+
+        .tests-form {
+            height: 80vh;
+            padding: 20px 0;
+        }
+
+        .defi-box {
+            height: 25%;
+
+            p {
+                margin: 20px;
+            }
+        }
+    }
+}
