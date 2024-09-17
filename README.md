@@ -15,12 +15,6 @@ To deploy the Quizlet Clone project using Docker, follow these steps:
 
 ### Steps
 
-#### Clone the Repository
-```bash
-git clone https://github.com/huudoann/Quizlet-Clone-ReactJS
-cd quizlet-clone
-```
-
 ### Running Frontend only
 
 ### Steps
